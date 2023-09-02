@@ -1,0 +1,49 @@
+.product_indi_title {
+  text-align: center;
+  margin: 2rem;
+  font-weight: bold;
+}
+
+.product-image_individual {
+  height: 30rem;
+  margin-top: 3rem;
+  margin-left: 7rem;
+  margin-right: 5rem;
+}
+
+.disp {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.disp2 {
+  margin: 7rem 5rem;
+  font-size: 1rem;
+}
+
+.added {
+  margin-top: 3rem;
+  padding: 0.7rem 3rem;
+  border-radius: 1rem;
+  transition: 1s ease;
+}
+
+.added:hover {
+  transform: scale(1.1);
+  transition: 1s ease;
+}
+
+.prices_indi {
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+@media screen and (max-width: 970px) {
+  .disp {
+    grid-template-columns: 1fr;
+  }
+
+  .disp2 {
+    margin: 7rem 2rem;
+  }
+}

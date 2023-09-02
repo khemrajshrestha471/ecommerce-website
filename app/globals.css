@@ -1,0 +1,27 @@
+/* root variable for implementing colors in css */
+
+:root {
+  --color-bg: #f7f5f5;
+  --color-font: #007bff;
+  --color-primary: green;
+  --color-error: red;
+  --color-new: #4caf50;
+  --color-white: #fff;
+  --color-black: black;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* hide vertical scroll bar */
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* default css class in toast react */
+
+.Toastify__toast {
+  font-size: 1rem;
+}

@@ -1,0 +1,167 @@
+.container {
+  background: var(--color-bg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+}
+
+li {
+  list-style: none;
+}
+
+.product-image-cart {
+  height: 5rem;
+  width: 5rem;
+  padding: 1rem;
+}
+
+.carts_product {
+  display: grid;
+  grid-template-columns: 0.7fr 5fr;
+  margin-left: 5rem;
+}
+
+.titles {
+  font-size: 1.3rem;
+}
+
+.prices {
+  font-weight: bold;
+}
+
+.price-cancel {
+  margin-top: -1.4rem;
+  display: flex;
+  gap: 5rem;
+}
+
+.cancel {
+  border-radius: 0.4rem;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  color: var(--color-error);
+  font-size: 1rem;
+}
+
+.cart-table {
+  width: 90%;
+  border-collapse: collapse;
+  border: 2px solid var(--color-black);
+}
+
+.cart-table th,
+.cart-table td {
+  padding: 8px;
+  border: 1px solid var(--color-black);
+}
+
+.cart-table td {
+  text-align: center;
+  vertical-align: middle;
+}
+
+/* Center product image and add some padding */
+.cart-table td img {
+  display: block;
+  margin: 0 auto;
+  max-width: 7rem;
+}
+
+/* Center title and add some padding */
+.cart-table td .titles {
+  margin: 0 auto;
+  max-width: 9.5rem; 
+}
+
+/* Center price */
+.cart-table td .prices {
+  font-weight: bold;
+}
+
+/* Center action button */
+.cart-table td .cancel {
+  display: block;
+  margin: 0 auto;
+}
+
+#single_component {
+  padding: 0.5rem 2rem;
+  border: transparent;
+  margin-bottom: 2rem;
+}
+
+.container_whole {
+  margin-top: 2rem;
+}
+
+.coupon {
+  font-family: cursive;
+  font-size: 1.3rem;
+}
+
+.coupon input {
+  margin-left: 1rem;
+  margin-right: 0.3rem;
+  border-radius: 0.4rem;
+  padding: 0.7rem;
+}
+
+.coupon button {
+  padding: 0.7rem 2rem;
+  border-radius: 0.4rem;
+  background: transparent;
+  color: var(--color-black);
+  cursor: pointer;
+}
+
+.coupon button:hover {
+  background: var(--color-primary);
+  color: var(--color-white);
+  border-color: var(--color-primary);
+}
+
+.conclusion {
+  margin-top: 2rem;
+  padding-bottom: 2rem;
+  text-align: center;
+  gap: 3rem;
+}
+
+.proceed-button {
+  background-color: var(--color-font);
+  color: var(--color-white);
+  border-radius: 5px;
+  cursor: pointer;
+  margin: auto 3rem;
+}
+
+.proceed-button:hover {
+  background-color: var(--color-font);
+}
+
+@media screen and (max-width: 490px) {
+  #conclusion_final button {
+    padding: 0.3rem 1.3rem;
+  }
+}
+
+@media screen and (max-width: 710px) {
+  .coupon {
+    font-size: 0.8rem;
+  }
+
+  .coupon input {
+    padding: 0.5rem;
+  }
+
+  .coupon button {
+    padding: 0.6rem 3rem;
+  }
+}
